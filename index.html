@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Eyes Follow Slider</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="cat-container">
+        <div class="cat">
+            <div class="ear left">
+                <div class="ear-inner"></div>
+            </div>
+            <div class="ear right">
+                <div class="ear-inner"></div>
+            </div>
+            
+            <div class="eyes-container">
+                <div class="eye">
+                    <div class="pupil" id="leftPupil">
+                        <div class="highlight"></div>
+                    </div>
+                </div>
+                <div class="eye">
+                    <div class="pupil" id="rightPupil">
+                        <div class="highlight"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nose"></div>
+            
+            <div class="whiskers">
+                <div class="whisker left-1"></div>
+                <div class="whisker left-2"></div>
+                <div class="whisker left-3"></div>
+                <div class="whisker right-1"></div>
+                <div class="whisker right-2"></div>
+                <div class="whisker right-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <input type="range" min="0" max="100" value="50" class="slider" id="positionSlider">
+        <div class="value-display" id="valueDisplay">Position: 50</div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
